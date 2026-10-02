@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Focus Block"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:text="Only your chosen apps can be opened. Everything else, and its internet access, is blocked."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <TextView android:text="1. Turn on permissions" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/accessibilityButton"
+        android:text="Turn on the blocking service (Accessibility)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" />
+
+    <Button android:id="@+id/vpnButton"
+        android:text="Turn on internet blocking (VPN)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" />
+
+    <Button android:id="@+id/batteryButton"
+        android:text="Allow Focus Block to run in the background"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" />
+
+    <TextView android:id="@+id/statusText"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="14dp" android:textColor="#445" android:lineSpacingExtra="4dp" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#dddddd" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" />
+
+    <TextView android:text="2. Choose up to 3 apps to allow" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <LinearLayout android:id="@+id/appsContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#dddddd" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" />
+
+    <TextView android:text="3. Allowed hours (optional)" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <Switch android:id="@+id/scheduleSwitch"
+        android:text="Only allow the apps during set hours"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView android:id="@+id/startTimeText"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:textColor="#1a73e8" android:textSize="16sp" />
+
+    <TextView android:id="@+id/endTimeText"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:textColor="#1a73e8" android:textSize="16sp" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#dddddd" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" />
+
+    <TextView android:text="4. Daily limit, in minutes" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <EditText android:id="@+id/limitInput"
+        android:layout_width="120dp" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:inputType="number" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#dddddd" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" />
+
+    <Switch android:id="@+id/blockingSwitch"
+        android:text="Blocking is on"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/saveButton"
+        android:text="Save"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" />
+
+</LinearLayout>
+</ScrollView>

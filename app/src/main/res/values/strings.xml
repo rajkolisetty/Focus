@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Focus Block</string>
+    <string name="accessibility_description">Watches which app is on screen so Focus Block can send away anything that is not on your allowed list.</string>
+</resources>
